@@ -417,6 +417,50 @@ export default function App() {
 
         <div className="container reveal"><div className="divider"></div></div>
 
+        {/* ============ FOUNDERS / ABOUT ============ */}
+        <section className="sec">
+          <div className="container">
+            <div className="sec-label reveal">The People Behind It</div>
+            <h2 className="sec-title serif reveal delay-1">Built from a lifetime<br />of <em>identity work.</em></h2>
+            <p className="sec-sub reveal delay-2">
+              Travis and Michelle Fox spent decades developing the Human Identity Operating System
+              across clinics, boardrooms, retreats, and one-on-one work on four continents.
+            </p>
+
+            <div className="founders-grid">
+              <div className="founder-card reveal from-left">
+                <div className="founder-photo">
+                  <Image src="/tf.jpg" alt="Travis Fox" fill sizes="92px" className="object-cover" />
+                </div>
+                <div className="founder-label">Co-Founder</div>
+                <div className="founder-name serif">Travis Fox</div>
+                <div className="founder-role">Creator of the Human Identity Operating System · Identity Strategist · Author</div>
+                <p className="founder-body">
+                  Travis spent over 20 years on a single question: why do people who understand their
+                  patterns still can&apos;t change them? The answer became MindPersonas®, a structural map
+                  of the identity states that drive thought, emotion, and behavior beneath conscious choice.
+                </p>
+              </div>
+
+              <div className="founder-card reveal from-right delay-1">
+                <div className="founder-photo">
+                  <Image src="/mf.jpg" alt="Michelle Fox" fill sizes="92px" className="object-cover" />
+                </div>
+                <div className="founder-label">Co-Founder</div>
+                <div className="founder-name serif">Michelle Fox</div>
+                <div className="founder-role">Identity Integration Specialist · Relationship Coach · Retreat Facilitator</div>
+                <p className="founder-body">
+                  Michelle brings warmth, precision, and deep relational intelligence to the work, guiding
+                  individuals and couples from pattern awareness into embodied, lasting change. She leads
+                  the retreats and much of the one-on-one integration work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="container reveal"><div className="divider"></div></div>
+
         {/* ============ FUTURE / QUESTIONS ============ */}
         <section className="sec">
           <div className="container">

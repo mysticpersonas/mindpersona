@@ -1,20 +1,63 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const description =
+  "MindPersonas® is the Human Identity Operating System™ — a proprietary framework that maps how human identity organizes, adapts, protects, performs, and evolves under changing conditions. Understand the architecture behind human behavior, communication, performance, and change.";
 
 export const metadata: Metadata = {
-  title: "MindPersonas®",
-  description: "The #1 Human Identity System",
+  metadataBase: new URL("https://mindpersonas.com"),
+  title: {
+    default: "MindPersonas® | The Human Identity Operating System™",
+    template: "%s | MindPersonas®",
+  },
+  description,
+  applicationName: "MindPersonas®",
+  keywords: [
+    "MindPersonas",
+    "Human Identity Operating System",
+    "MPHIOS",
+    "identity architecture",
+    "human behavior",
+    "Core Shadow Oracle",
+    "personal development",
+    "leadership performance",
+    "Travis Fox",
+    "Michelle Fox",
+    "identity framework",
+    "behavioral science",
+  ],
+  authors: [{ name: "Travis Fox" }, { name: "Michelle Fox" }],
+  creator: "MindPersonas®",
+  publisher: "MindPersonas®",
+  category: "Personal Development",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "https://mindpersonas.com",
+    siteName: "MindPersonas®",
+    title: "MindPersonas® | The Human Identity Operating System™",
+    description,
+    images: [
+      { url: "/logo.png", width: 192, height: 192, alt: "MindPersonas®" },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MindPersonas® | The Human Identity Operating System™",
+    description,
+    images: ["/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -23,11 +66,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className="h-full">
+      <body className="min-h-full flex flex-col antialiased">{children}</body>
     </html>
   );
 }
