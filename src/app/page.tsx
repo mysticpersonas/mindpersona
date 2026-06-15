@@ -75,6 +75,7 @@ export default function App() {
           </div>
           <div className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
             <a href="/" onClick={() => setMobileMenuOpen(false)}>Home</a>
+            <a href="/applications" onClick={() => setMobileMenuOpen(false)}>Applications</a>
             <a href="/connect" onClick={() => setMobileMenuOpen(false)}>Connect</a>
             <a href="/publications" onClick={() => setMobileMenuOpen(false)}>Publications</a>
             <a href="https://membership.mindpersonas.com/login" target="_blank" rel="noopener noreferrer" className="sm:hidden">Members</a>
@@ -528,6 +529,7 @@ export default function App() {
             <p style={{ marginBottom: '10px' }}>© 2026 MindPersonas® · All Rights Reserved</p>
             <p>
               <a href="/">Home</a>
+              <a href="/applications">Applications</a>
               <a href="/connect">Connect</a>
               <a href="/publications">Publications</a>
               <a href="#">Members</a>

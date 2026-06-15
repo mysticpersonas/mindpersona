@@ -73,6 +73,7 @@ export default function PublicationsPage() {
           </div>
           <div className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
             <a href="/" onClick={() => setMobileMenuOpen(false)}>Home</a>
+            <a href="/applications" onClick={() => setMobileMenuOpen(false)}>Applications</a>
             <a href="/connect" onClick={() => setMobileMenuOpen(false)}>Connect</a>
             <a href="/publications" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--gold)' }}>Publications</a>
             <a href="https://membership.mindpersonas.com/login" target="_blank" rel="noopener noreferrer" className="sm:hidden">Members</a>
@@ -103,49 +104,55 @@ export default function PublicationsPage() {
         <section className="sec" style={{ paddingTop: '32px' }}>
           <div className="container">
             <div className="pub-feature">
-              <div className="pub-cover reveal scale-in">
-                <Image src="/DIGITAL_BOOK_COVER.jpeg" alt="The Mystic Personas book cover" fill className="object-cover" />
+              {/* LEFT — sticky cover + the main CTA, visible on load, pinned while scrolling */}
+              <div className="pub-left">
+                <div className="pub-cover reveal scale-in">
+                  <Image src="/DIGITAL_BOOK_COVER.jpeg" alt="The Mystic Personas book cover" fill className="object-cover" />
+                </div>
+                <div className="pub-buy-card reveal delay-1">
+                  <div className="sec-label">Available Now</div>
+                  <a
+                    href="https://www.amazon.com/dp/B0F3W6521T"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary no-underline"
+                  >
+                    Buy on Amazon
+                  </a>
+                  <p className="pub-trust">Paperback &amp; Kindle · Ships worldwide</p>
+                </div>
               </div>
 
-              <div className="sec-label reveal" style={{ marginBottom: '16px' }}>Available Now</div>
-              <h2 className="pub-title serif reveal delay-1">The Mystic Personas</h2>
-              <p className="pub-sub reveal delay-1">Unlock your power, transform your shadows, and master your destiny.</p>
+              {/* RIGHT — scrollable description */}
+              <div className="pub-right">
+                <h2 className="pub-title serif reveal">The Mystic Personas</h2>
+                <p className="pub-sub reveal delay-1">Unlock your power, transform your shadows, and master your destiny.</p>
 
-              <div className="pub-rule reveal" />
+                <div className="pub-rule reveal" />
 
-              <p className="pub-quote reveal">
-                &ldquo;A living blueprint for mastery that shows you not just who you are, but who you are becoming.&rdquo;
-              </p>
-
-              <div className="reveal">
-                <div className="pub-block-label">The Framework</div>
-                <p className="pub-block-body">
-                  Discover the hidden energies guiding your decisions, uncover the unseen forces that
-                  sabotage success, and ascend to your Oracle, where clarity and intuition merge.
+                <p className="pub-quote reveal">
+                  &ldquo;A living blueprint for mastery that shows you not just who you are, but who you are becoming.&rdquo;
                 </p>
-              </div>
 
-              <div className="reveal">
-                <div className="pub-block-label">The Application</div>
-                <p className="pub-block-body">
-                  Predict moves in business, decode emotions in relationships, and shift personas at
-                  will to unlock your full potential.
+                <div className="reveal">
+                  <div className="pub-block-label">The Framework</div>
+                  <p className="pub-block-body">
+                    Discover the hidden energies guiding your decisions, uncover the unseen forces that
+                    sabotage success, and ascend to your Oracle, where clarity and intuition merge.
+                  </p>
+                </div>
+
+                <div className="reveal">
+                  <div className="pub-block-label">The Application</div>
+                  <p className="pub-block-body">
+                    Predict moves in business, decode emotions in relationships, and shift personas at
+                    will to unlock your full potential.
+                  </p>
+                </div>
+
+                <p className="pub-ask reveal">
+                  The question is no longer whether the world is ready.<br />Are you?
                 </p>
-              </div>
-
-              <p className="pub-ask reveal">
-                The question is no longer whether the world is ready.<br />Are you?
-              </p>
-
-              <div className="pub-buy-wrap reveal">
-                <a
-                  href="https://www.amazon.com/dp/B0F3W6521T"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary no-underline"
-                >
-                  Buy on Amazon
-                </a>
               </div>
             </div>
           </div>
@@ -190,6 +197,7 @@ export default function PublicationsPage() {
             <p style={{ marginBottom: '10px' }}>© 2026 MindPersonas® · All Rights Reserved</p>
             <p>
               <a href="/">Home</a>
+              <a href="/applications">Applications</a>
               <a href="/connect">Connect</a>
               <a href="/publications">Publications</a>
               <a href="#">Members</a>

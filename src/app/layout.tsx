@@ -67,6 +67,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
+      <head>
+        {/* Warm up the booking-widget origins on every page load, so the moment
+            a user lands on /connect or /booking the DNS + TLS handshake is already
+            done and the iframe starts fetching instantly instead of cold. */}
+        <link rel="preconnect" href="https://api.leadconnectorhq.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://link.msgsndr.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://api.leadconnectorhq.com" />
+        <link rel="dns-prefetch" href="https://link.msgsndr.com" />
+      </head>
       <body className="min-h-full flex flex-col antialiased">{children}</body>
     </html>
   );

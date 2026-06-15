@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Script from 'next/script';
+import BookingEmbed from '../components/BookingEmbed';
 
 export default function ConnectPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,6 +23,7 @@ export default function ConnectPage() {
           </div>
           <div className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
             <a href="/">Home</a>
+            <a href="/applications">Applications</a>
             <a href="/connect" className="text-[var(--gold)]">Connect</a>
             <a href="/publications">Publications</a>
             <a href="https://membership.mindpersonas.com/login" target="_blank" rel="noopener noreferrer" className="sm:hidden">Members</a>
@@ -59,14 +60,8 @@ export default function ConnectPage() {
                 </div>
               </div>
               
-              <div className="w-full relative min-h-[600px] flex flex-col justify-center bg-transparent mt-8 lg:mt-0">
-                <iframe 
-                  src="https://api.leadconnectorhq.com/widget/booking/Q77nXFmBMCGDOlTb5gUC" 
-                  style={{ width: '100%', height: '700px', border: 'none', overflow: 'hidden', background: 'transparent' }} 
-                  scrolling="no" 
-                  id="Q77nXFmBMCGDOlTb5gUC_1780052948307"
-                ></iframe>
-                <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="lazyOnload" />
+              <div className="w-full relative flex flex-col justify-center bg-transparent mt-8 lg:mt-0">
+                <BookingEmbed height={700} />
               </div>
             </div>
 
@@ -78,6 +73,7 @@ export default function ConnectPage() {
             <p style={{ marginBottom: '10px' }}>© 2026 MindPersonas® · All Rights Reserved</p>
             <p>
               <a href="/">Home</a>
+              <a href="/applications">Applications</a>
               <a href="/connect">Connect</a>
               <a href="/publications">Publications</a>
               <a href="#">Members</a>

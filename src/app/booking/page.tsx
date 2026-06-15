@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Script from 'next/script';
+import BookingEmbed from '../components/BookingEmbed';
 
 export default function BookingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,6 +23,7 @@ export default function BookingPage() {
           </div>
           <div className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
             <a href="/">Home</a>
+            <a href="/applications">Applications</a>
             <a href="/connect">Connect</a>
             <a href="/publications">Publications</a>
             <a href="https://membership.mindpersonas.com/login" target="_blank" rel="noopener noreferrer" className="sm:hidden">Members</a>
@@ -46,13 +47,7 @@ export default function BookingPage() {
             <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 sm:p-8 backdrop-blur-2xl shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[var(--gold)] to-transparent opacity-50"></div>
               
-              <iframe 
-                src="https://api.leadconnectorhq.com/widget/booking/Q77nXFmBMCGDOlTb5gUC" 
-                style={{ width: '100%', minHeight: '600px', border: 'none', overflow: 'hidden' }} 
-                scrolling="no" 
-                id="Q77nXFmBMCGDOlTb5gUC_1780052948307"
-              ></iframe>
-              <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="lazyOnload" />
+              <BookingEmbed height={620} />
             </div>
           </div>
         </section>
@@ -62,6 +57,7 @@ export default function BookingPage() {
             <p style={{ marginBottom: '10px' }}>© 2026 MindPersonas® · All Rights Reserved</p>
             <p>
               <a href="/">Home</a>
+              <a href="/applications">Applications</a>
               <a href="/connect">Connect</a>
               <a href="#">Publications</a>
               <a href="#">Members</a>
