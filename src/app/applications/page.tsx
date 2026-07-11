@@ -15,12 +15,17 @@ const APPLICATIONS: [string, string, string, string, string][] = [
   ['💛', 'Relationships', 'Communication, conflict navigation, and deeper connection.', '', 'https://lovewithoutluggage.com/love'],
   ['🧭', 'Private 1:1', 'Personalized identity architecture, implemented for you.', '', 'https://hypnoalchemyheal.com/services'],
   ['🌄', 'Retreat Experiences', 'Immersive identity awareness and development.', '', 'https://hypnoalchemy.me/retreats'],
-  ['🎧', 'Hypnotic Audio', 'Guided experiences for awareness, regulation, and performance.', '', 'https://hypnoalchemyheal.com/'],
+  ['🎧', 'Hypnotic Audio', 'Guided experiences for awareness, regulation, and performance.', '', 'https://membership.mindpersonas.com/courses/offers/3e60fe85-36e7-4f2a-9065-aba4004a561c'],
 ];
 
 // "https://askauri.com" -> "askauri.com" for a clean, human-readable link label.
+// Short, friendly preview labels for links whose bare domain reads too long/technical.
+const LINK_LABEL: Record<string, string> = {
+  'https://membership.mindpersonas.com/courses/offers/3e60fe85-36e7-4f2a-9065-aba4004a561c': 'mindpersonas.com',
+};
 // Show a clean domain only — strip protocol, "www.", and any path (e.g. personaforce.co).
-const prettyLink = (url: string) => url.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/.*$/, '');
+const prettyLink = (url: string) =>
+  LINK_LABEL[url] ?? url.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/.*$/, '');
 
 export default function ApplicationsPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

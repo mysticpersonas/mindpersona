@@ -395,7 +395,7 @@ export default function App() {
                 ['💛', 'Relationships', 'Communication, conflict navigation, and deeper connection.', '', 'https://lovewithoutluggage.com/love'],
                 ['🧭', 'Private 1:1', 'Personalized identity architecture, implemented for you.', '', 'https://hypnoalchemyheal.com/services'],
                 ['🌄', 'Retreat Experiences', 'Immersive identity awareness and development.', '', 'https://hypnoalchemy.me/retreats'],
-                ['🎧', 'Hypnotic Audio', 'Guided experiences for awareness, regulation, and performance.', '', 'https://hypnoalchemyheal.com/'],
+                ['🎧', 'Hypnotic Audio', 'Guided experiences for awareness, regulation, and performance.', '', 'https://membership.mindpersonas.com/courses/offers/3e60fe85-36e7-4f2a-9065-aba4004a561c'],
               ].map(([ico, name, desc, badge, link], i) => (
                 <a
                   key={name}
