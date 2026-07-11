@@ -387,15 +387,15 @@ export default function App() {
               {[
                 ['🤖', 'AI Solutions', 'Identity-aware AI guidance and support.', 'Ask Auri™', 'https://askauri.com'],
                 ['🎓', 'Practitioner Training', 'Professional application and certification in the Operating System.', '', 'https://mindpath.me/'],
-                ['📈', 'Corporate Performance', 'Sales, leadership, culture, communication, and team dynamics.', '', 'https://oncourseunit.com'],
-                ['⚖️', 'Legal Applications', 'Witness prep, depositions, trial readiness, and courtroom performance.', '', 'https://oncourseunit.com'],
-                ['🏆', 'Sports Performance', 'Performance under pressure, mental resilience, competitive consistency.', '', 'https://oncourseunit.com'],
+                ['📈', 'Corporate Performance', 'Sales, leadership, culture, communication, and team dynamics.', '', 'https://personaforce.co'],
+                ['⚖️', 'Legal Applications', 'Witness prep, depositions, trial readiness, and courtroom performance.', '', 'https://www.personaforce.co/lawyers'],
+                ['🏆', 'Sports Performance', 'Performance under pressure, mental resilience, competitive consistency.', '', 'https://www.personaforce.co/athletes'],
                 ['🚨', 'First Responders & Military', 'Decision-making and communication under stress, building identity resilience.', '', 'https://scanresponse.com/'],
                 ['🎖️', 'Veterans & Retired', 'Transition support, purpose reconstruction, and identity adaptation beyond service.', '', 'https://oncourseunit.com'],
                 ['💛', 'Relationships', 'Communication, conflict navigation, and deeper connection.', '', 'https://lovewithoutluggage.com/love'],
                 ['🧭', 'Private 1:1', 'Personalized identity architecture, implemented for you.', '', 'https://hypnoalchemyheal.com/services'],
                 ['🌄', 'Retreat Experiences', 'Immersive identity awareness and development.', '', 'https://hypnoalchemy.me/retreats'],
-                ['🎧', 'Hypnotic Audio', 'Guided experiences for awareness, regulation, and performance.', '', 'https://oncourseunit.com'],
+                ['🎧', 'Hypnotic Audio', 'Guided experiences for awareness, regulation, and performance.', '', 'https://hypnoalchemyheal.com/'],
               ].map(([ico, name, desc, badge, link], i) => (
                 <a
                   key={name}
