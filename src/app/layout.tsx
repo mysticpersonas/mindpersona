@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const description =
-  "MindPersonas® is the Human Identity Operating System™ — a proprietary framework that maps how human identity organizes, adapts, protects, performs, and evolves under changing conditions. Understand the architecture behind human behavior, communication, performance, and change.";
+  "MindPersonas™ is the Human Identity Operating System™ — a proprietary framework that maps how human identity organizes, adapts, protects, performs, and evolves under changing conditions. Understand the architecture behind human behavior, communication, performance, and change.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mindpersonas.com"),
   title: {
-    default: "MindPersonas® | The Human Identity Operating System™",
-    template: "%s | MindPersonas®",
+    default: "MindPersonas™ | The Human Identity Operating System™",
+    template: "%s | MindPersonas™",
   },
   description,
-  applicationName: "MindPersonas®",
+  applicationName: "MindPersonas™",
   keywords: [
     "MindPersonas",
     "Human Identity Operating System",
@@ -27,23 +27,23 @@ export const metadata: Metadata = {
     "behavioral science",
   ],
   authors: [{ name: "Travis Fox" }, { name: "Michelle Fox" }],
-  creator: "MindPersonas®",
-  publisher: "MindPersonas®",
+  creator: "MindPersonas™",
+  publisher: "MindPersonas™",
   category: "Personal Development",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: "https://mindpersonas.com",
-    siteName: "MindPersonas®",
-    title: "MindPersonas® | The Human Identity Operating System™",
+    siteName: "MindPersonas™",
+    title: "MindPersonas™ | The Human Identity Operating System™",
     description,
     images: [
-      { url: "/logo.png", width: 192, height: 192, alt: "MindPersonas®" },
+      { url: "/logo.png", width: 192, height: 192, alt: "MindPersonas™" },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MindPersonas® | The Human Identity Operating System™",
+    title: "MindPersonas™ | The Human Identity Operating System™",
     description,
     images: ["/logo.png"],
   },

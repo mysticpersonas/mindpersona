@@ -71,7 +71,7 @@ export default function App() {
         <nav className="reveal delay-1">
           <div className="nav-logo">
             <Image src="/logo.png" alt="MindPersonas Logo" width={140} height={36} className="h-7 w-auto object-contain" />
-            <div className="logo-text">Mind<span>Personas®</span></div>
+            <div className="logo-text">Mind<span>Personas™</span></div>
           </div>
           <div className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
             <a href="/" onClick={() => setMobileMenuOpen(false)}>Home</a>
@@ -93,7 +93,7 @@ export default function App() {
           <div className="breath" />
           <div className="container">
             <div className="hero-eyebrow reveal delay-1">The Human Identity Operating System™</div>
-            <h1 className="hero-brand reveal delay-2">MindPersonas®</h1>
+            <h1 className="hero-brand reveal delay-2">MindPersonas™</h1>
             <div className="hero-os reveal delay-3">The Human Identity Operating System™</div>
             <p className="hero-arch reveal delay-4">
               The architecture behind human <span className="mark">behavior</span>, communication,
@@ -334,7 +334,7 @@ export default function App() {
             <h2 className="sec-title serif reveal delay-1">Not who you are.<br />How you&apos;re <em>organizing right now.</em></h2>
             <p className="sec-sub reveal delay-2">
               Many assume it&apos;s another personality test or archetype model. It isn&apos;t. Systems
-              like Myers-Briggs®, DISC®, Enneagram®, and StrengthsFinder® are valuable. They were
+              like Myers-Briggs™, DISC™, Enneagram™, and StrengthsFinder™ are valuable. They were
               simply built to answer a <strong>different question.</strong>
             </p>
 
@@ -438,7 +438,7 @@ export default function App() {
                 <div className="founder-role">Creator of the Human Identity Operating System · Identity Strategist · Author</div>
                 <p className="founder-body">
                   Travis spent over 20 years on a single question: why do people who understand their
-                  patterns still can&apos;t change them? The answer became MindPersonas®, a structural map
+                  patterns still can&apos;t change them? The answer became MindPersonas™, a structural map
                   of the identity states that drive thought, emotion, and behavior beneath conscious choice.
                 </p>
               </div>
@@ -513,7 +513,7 @@ export default function App() {
         <section className="sec-tight">
           <div className="container">
             <div className="brand-close reveal">
-              <div className="brand-close-name serif">MindPersonas®</div>
+              <div className="brand-close-name serif">MindPersonas™</div>
               <div className="brand-close-os serif">The Human Identity Operating System™</div>
               <div className="brand-close-tag serif">
                 <span>Understanding Human Identity.</span>
@@ -526,7 +526,7 @@ export default function App() {
 
         <footer>
           <div className="container reveal">
-            <p style={{ marginBottom: '10px' }}>© 2026 MindPersonas® · All Rights Reserved</p>
+            <p style={{ marginBottom: '10px' }}>© 2026 MindPersonas™ · All Rights Reserved</p>
             <p>
               <a href="/">Home</a>
               <a href="/applications">Applications</a>

@@ -69,7 +69,7 @@ export default function PublicationsPage() {
         <nav className="reveal delay-1">
           <div className="nav-logo">
             <Image src="/logo.png" alt="MindPersonas Logo" width={140} height={36} className="h-7 w-auto object-contain" />
-            <div className="logo-text">Mind<span>Personas®</span></div>
+            <div className="logo-text">Mind<span>Personas™</span></div>
           </div>
           <div className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
             <a href="/" onClick={() => setMobileMenuOpen(false)}>Home</a>
@@ -194,7 +194,7 @@ export default function PublicationsPage() {
 
         <footer className="reveal">
           <div className="container">
-            <p style={{ marginBottom: '10px' }}>© 2026 MindPersonas® · All Rights Reserved</p>
+            <p style={{ marginBottom: '10px' }}>© 2026 MindPersonas™ · All Rights Reserved</p>
             <p>
               <a href="/">Home</a>
               <a href="/applications">Applications</a>
